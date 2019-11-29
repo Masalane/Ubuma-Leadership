@@ -1,0 +1,22 @@
+{
+  "name": "web-page",
+  "version": "1.0.0",
+  "description": "Ubama African Leadership Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Masalane/Ubuma-Leadership.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Masalane/Ubuma-Leadership/issues"
+  },
+  "homepage": "https://github.com/Masalane/Ubuma-Leadership#readme",
+  "dependencies": {
+    "express": "4.17.1"
+  }
+}
