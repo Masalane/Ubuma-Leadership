@@ -51,8 +51,10 @@ body, html {
     /* Create three equal columns that floats next to each other */
 .column {
   float: left;
+  align-content: left;
+  align-self: left;
   width: 33%;
-  padding: 1px;
+  padding: 10px;
   height: 250px; /* Should be removed. Only for demonstration */
 }
 
@@ -82,13 +84,15 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">Home</a>
     <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button dropbtn">About</a>
-      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Team</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Work</a>
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact</a>
+    <div class="w3-left w3-hide-small">
+      <a href="#Our-Mission" class="w3-bar-item w3-button dropbtn"><i class="fa fa-thumb-tack"></i> Our Mission</a>
+      <a href="#what-we-do" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i> What we do</a>
+      <a href="#leadership-course" class="w3-bar-item w3-button"><i class="fa fa-book"></i> Leadership Course</a>
+      <a href="#imbizo" class="w3-bar-item w3-button"><i class="fa fa-group"></i> The Imbizo</a>
+      <a href="#justice-dialog" class="w3-bar-item w3-button"><i class="fa fa-comments"></i> Justice Dialog</a>
+      <a href="#speakers" class="w3-bar-item w3-button"><i class="fa fa-bullhorn"></i> Guest Speakers</a>
+      <a href="#contant-details" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact Details</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -107,8 +111,8 @@ body, html {
 </header>
 
 <!-- About Section -->
-<div class="w3-container" style="padding:30px 16px" id="about">
-  <h3 class="w3-left">Our mission</h3>
+<div class="w3-container" style="padding:60px 30px" id="Our-Mission">
+  <h3 class="w3-left" id="what-we-do">Our mission</h3>
   <br><br>
   <p align="justify">
     Ubuma Leadership was established in 2014 to build a transformative and just 
@@ -116,7 +120,7 @@ body, html {
     to affect change by growing ethical and moral leadership and by being our people’s 
     keeper in all struggles.
   </p>
-  <h3 class="w3-left">What we do?</h3>
+  <h3 class="w3-left" id="leadership-course">What we do?</h3>
   <br><br>
   <p>Build today the Leaders we need tomorrow</p>
   <h3 class="w3-left">The Leadership Course</h3>
@@ -134,7 +138,7 @@ body, html {
       <li>Create and cultivate faith, assurance and self-confidence</li>
       <li>Increase understanding of leadership</li>
       <li>Grow a stronger consciousness for leadership and community</li>
-      <li>Enhance communication skills</li>
+      <li id="imbizo">Enhance communication skills</li>
       <li>Build greater a hope within the individual</li>
       <li>Strengthen people skills</li>
       <li>Have fun</li>
@@ -172,7 +176,7 @@ body, html {
     <iframe align="center" width="420" height="315" 
       src="https://www.youtube.com/embed/JblEhvCDrl4" allowfullscreen>
     </iframe>
-    <p align="justify">
+    <p align="justify" id="justice-dialog">
         The Black Men’s Imbizo Champions wrote poems to their younger selves for a group of boys we 
         are currently mentoring in Orlando. These poems were so powerful and moving that we put together 
         a few of them and thought we should share them in a video. The champions recite their 
@@ -199,13 +203,49 @@ body, html {
         Constitution when it comes to the protection of women's agency, lives, and bodies. Our guest speakers 
         were separated into the three panel discussions titled;  
     </p>
-    <ol>
+    <ol id="speakers">
       <li>Gender Based Violence </li>
       <li>Customary Law and Culture</li>
       <li>Work and Trade</li>
     </ol>
 
-
+    <h3 class="w3-left">Guest Speakers</h3>
+    <br><br>
+    <div class="w3-left" align="left">
+    <div class="row" align="left">
+        <div class="column" align="left">
+          <ul>
+          <li>Josina Machel</li>  
+          <li>Basetsana Koitsioe </li>  
+          <li>Sagwadi Mabunda</li>  
+          <li>Justice Edwin Cameron</li>  
+          <li>Mike Mpanya </li>  
+          <li>Mpilo Shabangu</li>   
+          </ul>
+        </div>
+        <div class="column">
+          <ul>
+          <li>Advocate Tembeka Ngcukaitobi</li>   
+          <li>Busisiwe Deyi</li>  
+          <li>Thandeka Kathi</li>  
+          <li>Rebecca Gore</li>  
+          <li>Deputy Minister John Jeffery </li>  
+          <li>Minkateko Blessing Majoko</li>   
+          </ul>
+        </div>
+        <div class="column">
+          <ul>
+          <li>Justice Richard Goldstone</li>   
+          <li>Advocate Amelia Rawhani-Mosalakae</li>  
+          <li>Dr. Nkosana Moyo</li>  
+          <li>Nonkululeko Nmtambo</li>  
+          <li>Michelle Sithole</li> 
+          </ul>
+        </div>
+      </div>
+      </div>
+  </div>
+</div>
     <!-- New stuff added -->
       <!-- Team Section -->
   <div class="w3-container" style="padding:30px 32px" id="team">
@@ -240,7 +280,7 @@ body, html {
   
       </div>
     </div>
-  
+
     <div class="w3-container" style="padding:100px 32px" id="team">
       <h3 class="w3-center">Discussions</h3>
       <div class="w3-row-padding" margin="50px">
@@ -262,45 +302,15 @@ body, html {
       </div>
     </div>
 
-    <h3 class="w3-left">Guest Speakers</h3>
-    <br><br>
-    <div class="w3-left">
-    <div class="row">
-        <div class="column">
-          <ul>
-          <li>Josina Machel</li>  
-          <li>Basetsana Koitsioe </li>  
-          <li>Sagwadi Mabunda</li>  
-          <li>Justice Edwin Cameron</li>  
-          <li>Mike Mpanya </li>  
-          <li>Mpilo Shabangu</li>   
-          </ul>
-        </div>
-        <div class="column">
-          <ul>
-          <li>Advocate Tembeka Ngcukaitobi</li>   
-          <li>Busisiwe Deyi</li>  
-          <li>Thandeka Kathi</li>  
-          <li>Rebecca Gore</li>  
-          <li>Deputy Minister John Jeffery </li>  
-          <li>Minkateko Blessing Majoko</li>   
-          </ul>
-        </div>
-        <div class="column">
-          <ul>
-          <li>Justice Richard Goldstone</li>   
-          <li>Advocate Amelia Rawhani-Mosalakae</li>  
-          <li>Dr. Nkosana Moyo</li>  
-          <li>Nonkululeko Nmtambo</li>  
-          <li>Michelle Sithole</li> 
-          </ul>
-        </div>
+    <div class="back-to-top">
+        <span class="back-home">
+          <a href="#home">Back to the top</a>
+        </span>
       </div>
-      </div>
-  </div>
-</div>
+    
+
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
+<footer class="w3-center w3-black w3-padding-64" id="contant-details">
   <h3>Contact Details</h3>
   <div class="w3-center">
     <div class="contact_row">
